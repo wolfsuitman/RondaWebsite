@@ -1,0 +1,555 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RONDA</title>
+    <link rel="stylesheet" href="css/main19.css">
+    <link rel="stylesheet" href="css/media19.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Protest+Strike&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/source/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/source/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/source/img/favicon-16x16.png">
+    <link rel="manifest" href="/source/img/site.webmanifest">
+</head>
+
+<body>
+    <div id="preloader">
+        <div class="flex-col gap-4 w-full flex items-center justify-center">
+          <div class="w-28 h-28 border-8 text-blue-400 text-4xl wobble flex items-center justify-center rounded-full relative">
+            <svg version="1.1" id="Layer_1" width="5em" height="5em" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 300 383.5" style="enable-background:new 0 0 300 383.5;" xml:space="preserve">
+              <style type="text/css">
+                  .st0{fill-rule:evenodd;clip-rule:evenodd;fill:#ffff;}
+              </style>
+              <path class="st0" d="M240.1,159.9c15.6,19.6,25,44.5,25,71.5s-9.6,52.6-25.7,72.4l-1.4,1.7l-0.4-2.2c-0.3-1.8-0.7-3.7-1.1-5.6
+                  c-8-35.3-34.2-65.6-77.4-90.2c-29.1-16.5-45.8-36.4-50.2-59c-2.8-14.6-0.7-29.3,3.3-41.9c4.1-12.6,10.1-23.1,15.2-29.4l16.8-20.5
+                  c2.9-3.6,8.5-3.6,11.4,0L240.1,159.9L240.1,159.9z M266.6,139.4L154.2,2c-2.1-2.6-6.2-2.6-8.3,0L33.4,139.4l-0.4,0.5
+                  C12.4,165.6,0,198.2,0,233.7c0,82.7,67.2,149.8,150,149.8c82.8,0,150-67.1,150-149.8c0-35.5-12.4-68.1-33.1-93.8L266.6,139.4
+                  L266.6,139.4z M60.3,159.5l10-12.3l0.3,2.3c0.2,1.8,0.5,3.6,0.9,5.4c6.5,34.1,29.8,62.6,68.6,84.6c33.8,19.2,53.4,41.3,59.1,65.6
+                  c2.4,10.1,2.8,20.1,1.8,28.8l-0.1,0.5l-0.5,0.2c-15.2,7.4-32.4,11.6-50.5,11.6c-63.5,0-115-51.4-115-114.8
+                  C34.9,204.2,44.4,179.1,60.3,159.5L60.3,159.5z"/>
+            </svg>
+            <img src="/images/v2/RondaRight.png" alt="Ronda Right" class="overlay-icon-right">
+            <img src="/images/v2/RondaLeft.png" alt="Ronda Left" class="overlay-icon-left">
+          </div>
+        </div>
+      </div>      
+    <header>
+        <div class="header_container">
+            <a href="" class="logo cursorNone">
+                <img src="/images/v2/logoRondaNew.png" alt="">
+            </a>
+            <nav>
+                <a href="#Home" style="text-transform: uppercase; font-style:Protest Strike;">Home</a>
+                <a href="#About" style="text-transform: uppercase; font-style:Protest Strike;">About</a>
+                <a href="#Tokenomics" style="text-transform: uppercase; font-style:Protest Strike;">Tokenomics</a>
+                <a href="/bag/" style="text-transform: uppercase; font-style:Protest Strike;">Bag Info</a>
+                <a href="#FAQs" style="text-transform: uppercase; font-style:Protest Strike;">FAQs</a>
+                <a href="#Social" style="text-transform: uppercase; font-style:Protest Strike;">SOCIAL</a>
+            </nav>
+            <div class="right_action">
+                <button class="menu_mobile_btn"><svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 256 256"><path fill="black" d="M230.14 62.17A33.88 33.88 0 0 0 206 50a34 34 0 1 0-62.81 20a2 2 0 0 1-.23 2.54L72.56 143a2.06 2.06 0 0 1-2.55.23A34 34 0 1 0 50 206a34 34 0 1 0 62.81-20a2 2 0 0 1 .23-2.54l70.4-70.4a2 2 0 0 1 2.54-.23a34 34 0 0 0 44.15-50.65Zm-9.54 36.31a22 22 0 0 1-28.24 4.17a14 14 0 0 0-17.4 1.92L104.57 175a14 14 0 0 0-1.92 17.4a22 22 0 1 1-40.41 8.26a6 6 0 0 0-5.93-6.93a7 7 0 0 0-.93.07a22 22 0 1 1 8.26-40.41A14 14 0 0 0 81 151.43L151.43 81a14 14 0 0 0 1.92-17.4a22 22 0 1 1 40.41-8.26a6 6 0 0 0 6.86 6.86a22 22 0 0 1 20 36.24Z"/></svg></button>
+            </div>
+        </div>
+    </header>
+    <div class="page_wrapper">
+     <div class="mobile_navigation ">
+            <div class="m_nav">
+                <a href="#Home" style="text-transform: uppercase; font-style:Protest Strike;">Home</a>
+                <a href="#About" style="text-transform: uppercase; font-style:Protest Strike;">About</a>
+                <a href="#Tokenomics" style="text-transform: uppercase; font-style:Protest Strike;">Tokenomics</a>
+                <a href="/bag/" style="text-transform: uppercase; font-style:Protest Strike;">Bag Info</a>
+                <a href="#FAQs" style="text-transform: uppercase; font-style:Protest Strike;">FAQs</a>
+                <a href="#Social" style="text-transform: uppercase; font-style:Protest Strike;">SOCIAL</a>
+            </div>
+            <div class="wrapper">
+                <a class="bone link_st_a primary_btn_a_img" target="_blank" href="https://hop.ag/swap/RONDA-SUI">
+                  <span>BUY $RONDA</span>
+                </a>
+              </div>
+              <!-- Filter: https://css-tricks.com/gooey-effect/ -->
+              <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                  <defs>
+                      <filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />    
+                          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                          <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+                      </filter>
+                  </defs>
+              </svg>
+        </div>
+        <section class="sn_hero" id="Home">
+            <div class="container">
+                <div class="sn_hero_content">
+                    <h1>RONDA</h1>
+                    <div class="row_btn">
+                        <div class="wrapper">
+                            <a class="bone primary_btn_a_img-item" target="_blank" href="https://hop.ag/swap/SUI-RONDA">
+                              <span>BUY $RONDA</span>
+                            </a>
+                          </div>
+                          <div class="wrapper">
+                            <a class="bone primary_btn_a_img-item" target="_blank" style="font-family: Protest Strike;" href="https://dexscreener.com/sui/0xa052785be00b4d43e5cd7f133b721a3825eb11df2b4506fab71d4504e18cb9a0">
+                              <span>CHART $RONDA</span>
+                            </a>
+                          </div>
+                          <!-- Filter: https://css-tricks.com/gooey-effect/ -->
+                          <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                              <defs>
+                                  <filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />    
+                                      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                                      <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+                                  </filter>
+                              </defs>
+                          </svg>
+                    </div>
+                    <div class="copy_container scroll_effect effect_active">
+                        <div class="copy_content">
+                            <span id="CopyText">
+                                0xdc9b462697876ff4c680e59b3756ac39a6899cfbc355a6880c60e01c8930b3cc::ronda::RONDA
+                            </span>
+                        </div>
+                        <button id="CopyButton" class="copy_button"></button>
+                    </div>
+                    <div class="wrapper">
+                        <a class="bone primary_btn_a_img-item" target="_blank" style="font-family: Protest Strike;" href="https://www.tokenutility.io/arena-pools/ronda-sui?refcode=ronda">
+                          <span>x10 $RONDA</span>
+                        </a>
+                      </div>
+                    <img src="/images/v2/RondaLeft.png" class="rocket_man" alt="">
+                    <img src="/images/v2/RondaRight.png" class="rocket_man2" alt="">
+                    <img src="/images/v2/hero_ronda.png" class="hero_char" alt="">
+                </div>
+            </div>
+        </section>
+        <div class="moving_line_scroll"></div>
+        <section class="sn_about">
+            <div class="anchor" id="About"></div>
+            <div class="container">
+                <div class="sn_about_content scroll_effect effect_active">
+                    <h2 class="scroll_effect effect_active">ABOUT RONDA</h2>
+                    <p class="scroll_effect effect_active" style="text-align: justify;">Ronda on Sui is a community-driven meme coin project built on the Sui Network. Inspired by my adopted dog, Ronda, it focuses on creating a fun and engaging crypto community. The project emphasizes its playful nature while also providing details on its tokenomics and future plans.<br><br> The goal is to build a vibrant ecosystem around the coin while involving the community in the project's growth and direction. Additionally, donations are made to organizations supporting all animals, reinforcing the project's commitment to giving back.</p>
+                    <p style="text-align: justify;">As for Ronda’s story, our journey together has been meaningful. I’ve shared some of our memories on Medium.</p>
+                    <a class="mediumReadMore" style="text-decoration: underline; color: white;" href="https://medium.com/@rondaonsui/how-ronda-on-sui-came-to-be-9c932307f8de" target="_blank">You can click here to read about Ronda...</a>
+                    <p style="text-align: justify;text-transform: uppercase;">Adopt, don't shop – make a animal happy.</p>
+                        <div class="row_btn">
+                            <div class="wrapper">
+                                <a class="bone primary_btn_a_img-item" target="_blank" href="https://hsoyuma.com/adopt.html">
+                                <span>ADOPT</span>
+                                </a>
+                            </div>
+                            <div class="wrapper">
+                                <a class="bone primary_btn_a_img-item" target="_blank" href="https://hsoyuma.com/">
+                                <span>DONATE</span>
+                                </a>
+                            </div>
+                            </div>
+                </div>
+            </div>
+        </section>
+        <div class="moving_line_scroll"></div>
+        <section class="sn_tokenomics">
+            <div class="anchor" id="Tokenomics"></div>
+            <div class="container">
+                <div class="sn_tokenomics_content">
+                    <div class="columns">
+                        <div class="column">
+                                <div class="box scroll_effect effect_active">
+                                    <img class="tokenomicPic" src="/images/v2/rondaTokenomic.png" alt="">
+                                    <h2>TOKENOMICS</h2>
+                                    <h3 class="mth3f">LP BURNT  <br>
+                                        FAIR LAUNCH <br>
+                                        OWNERSHIP RENOUNCED <br>
+                                        10 BILLION TOTAL SUPPLY</h3>
+                                    <hr class="indexLineA"></hr>
+                                    <h2>CURRENT PRICE</h2>
+                                    <div class="mth3f"><h3 id="current-price" ><br>LOADING...</h3></div>
+                                    <hr class="indexLineA"></hr>
+                                    <h2>MARKETCAP</h2>
+                                    <div class="mth3f"><h3 id="market-cap" ><br>LOADING...</h3></div>
+                                </div>
+                        </div>
+                        <div class="column">
+                                <div class="box scroll_effect effect_active">
+                                    <img src="../images/v2/withBag.png" class="withBagPic" alt="">
+                                    <h1>FILL YOUR BAG WITH RONDA!</span></h1>
+                                    <div style="display: flex; justify-content: center; align-items: center; text-align: center;">
+                                    <h2 style="margin-top: 30px; margin-right: 10px;">CURRENT BAG VALUE</h2>
+                                    <img style="margin-top: 30px;" src="../images/v2/suilogo.png" class="tokenLogos" alt="" >
+                                    </div>
+                                    <div class="mth4"><h4 id="ronda-marketcap" >(LOADING...)</h4></div>
+                                    <div class="mth3s"><h3>1% RONDA BAG: <span id="ronda-price">LOADING...</span></h3></div>
+                                    <hr class="indexLineA"></hr>
+                                    <div style="display: flex; justify-content: center; align-items: center; text-align: center;">
+                                    <h2 style="margin-right: 10px;">AT THE PRICE OF $FUD</h2>
+                                    <img src="../images/v2/suilogo.png" class="tokenLogos" alt="" >
+                                    </div>
+                                    <div class="mth4"><h4 id="fud-the-pug-marketcap">(LOADING...)</h4></div>
+                                    <div class="mth3s"><h3>1% RONDA BAG: <span id="fud-the-pug-price">LOADING...</span></h3></div>
+                                    <hr class="indexLineA"></hr>
+                                    <div style="display: flex; justify-content: center; align-items: center; text-align: center;">
+                                        <h2 style="margin-right: 10px;">AT THE PRICE OF $WIF</h2>
+                                        <img src="../images/v2/sollogo.png" class="tokenLogos" alt="" >
+                                    </div>                             
+                                    <p style="text-align: center; font-size: 18px;">                                                                    
+                                    <div class="mth4"><h4 id="dogwifcoin-marketcap" >(LOADING...)</h4></div>
+                                    <div class="mth3s"><h3>1% RONDA BAG: <span id="dogwifcoin-price">LOADING...</span></h3></div>
+                                </div>
+                        </div>       
+                    </div>
+                 </div>
+            </div>
+            <div class="anchor" id="PARTNERs"></div>
+                    <center><h2 class="scroll_effect partnerText">PARTNERS & VERTIFICATIONS</h2></center>                 
+            <div class="partnerBox">
+                <div class="swiper-container partner ">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slider-item">
+                                <div class="tf-partner">
+                                    <img class="partnerImage" src="images/v2/partners/partner-cg.png" alt="Image">
+                                </div>
+                            </div><!-- item-->
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-item">
+                                <div class="tf-partner">
+                                    <img class="partnerImage" src="images/v2/partners/partner-dexscreener.png" alt="Image">
+                                </div>
+                            </div><!-- item-->
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-item">
+                                <div class="tf-partner">
+                                    <img class="partnerImage" src="images/v2/partners/partner-aveai.png" alt="Image">
+                                </div>
+                            </div><!-- item-->
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-item">
+                                <div class="tf-partner">
+                                    <img class="partnerImage" src="images/v2/partners/partner-moontok.png" alt="Image">
+                                </div>
+                            </div><!-- item-->
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-item">
+                                <div class="tf-partner">
+                                    <img class="partnerImage" src="images/v2/partners/partner-suiscan.png" alt="Image">
+                                </div>
+                            </div><!-- item-->
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-item">
+                                <div class="tf-partner">
+                                    <img class="partnerImage" src="images/v2/partners/partner-suivision.png" alt="Image">
+                                </div>
+                            </div><!-- item-->
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-item">
+                                <div class="tf-partner">
+                                    <img class="partnerImage" src="images/v2/partners/partner-gateiopilot.png" alt="Image">
+                                </div>
+                            </div><!-- item-->
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-item">
+                                <div class="tf-partner">
+                                    <img class="partnerImage" src="images/v2/partners/partner-tokenUtility.png" alt="Image">
+                                </div>
+                            </div><!-- item-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sn_fuq">
+            <div class="anchor" id="FAQs"></div>
+            <div class="container">
+                <div class="sn_fuq_content">
+                    <center><h2 class="scroll_effect">FAQ</h2></center>
+                    <div class="question_items">
+                        <div class="question_item active scroll_effect">
+                            <div class="question_btn">
+                                <p>WHAT IS THE RONDA PROJECT?</p>
+                                <button class="faq_btn"></button>
+                            </div>
+                            <p class="response">RONDA is a meme coin on the Sui Network, inspired by my dog, Ronda. The project’s goal is to create a fun, community-driven cryptocurrency ecosystem. However, Ronda is not just a meme coin; it also serves as a charity initiative, dedicated to supporting all animals.</p>
+
+                            <p class="response">Additionally, Ronda is under the management and legal protection of Puff Boxx LLC.</p>
+                        </div>
+                        <div class="question_item scroll_effect">
+                            <div class="question_btn">
+                                <p>HOW CAN I BUY $RONDA?</p>
+                                <button class="faq_btn"></button>
+                            </div>
+                            <p class="response">To buy $RONDA, first set up a Sui-compatible wallet like Mysten Labs' wallet. Then, bridge your funds to the Sui Network if needed. Finally, use a decentralized exchange (DEX) on the Sui Network to swap your Sui tokens for $RONDA or Simply click the "Buy $RONDA" button in this Website and connect your wallet to complete the purchase.</p>
+                        </div>
+                        
+                        <div class="question_item scroll_effect">
+                            <div class="question_btn">
+                                <p>INFO ABOUT DEVELOPER AND RONDA.</p>
+                                <button class="faq_btn"></button>
+                            </div>
+                            <p class="response">My name is Isaias Valdez from Arizona, USA, and I've always been fascinated by the crypto space. That curiosity finally led me to bring my long-envisioned crypto project to life. Choosing a name for the project wasn’t difficult—my beloved dog, Ronda, was the perfect inspiration. I adopted her from The Humane Society in the city where I live, and now she has become the face of this project in the digital world.</p>
+                            <p class="response">Unlike many developers who prefer to stay hidden, I’m open to engaging with the community. I'm fully doxxed, and you can get to know me better through the daily voice chats I host on Telegram.</p>
+                            <a class="response" style="text-decoration: underline;" href="https://x.com/WolfSuitman/status/1849393424878756296" target="_blank">Read more about my doxxed information...</a>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="sn_footer_content" id="Social">
+                    <div class="social_media">
+                        <p class="title">SOCIAL</p>
+                        <div class="social_media_link">
+                            <a class="cursorNone" href="https://x.com/rondaonsui" target="_blank"><img src="/images/v2/x_social_icon_w.svg" alt=""></a>
+                            <a class="cursorNone" href="https://t.me/RondaOnSuiportal" target="_blank"><img src="/images/v2/tg_social_icon_w.svg" alt=""></a>
+                            <a class="cursorNone" href="https://www.tiktok.com/@rondaonsui" target="_blank"><img src="/images/v2/tiktok_social_icon_w.svg" alt=""></a>
+                            <a class="cursorNone" href="https://www.instagram.com/rondaonsui" target="_blank"><img src="/images/v2/insta_social_icon_w.svg" alt=""></a>
+                            <a class="cursorNone" href="https://medium.com/@rondaonsui/how-ronda-on-sui-came-to-be-9c932307f8de" target="_blank"><img src="/images/v2/medium_social_icon_w.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+
+<script>
+    const sliderText = document.getElementById('SliderText');
+    const texts = [
+
+    ];
+
+    const dots = document.querySelectorAll('.dot');
+    let currentIndex = 0;
+
+    function updateSlider(index) {
+        sliderText.innerText = texts[index];
+        dots.forEach(dot => dot.classList.remove('active'));
+        dots[index].classList.add('active');
+    }
+
+    document.querySelector('.arrow_left').addEventListener('click', () => {
+        currentIndex = (currentIndex === 0) ? texts.length - 1 : currentIndex - 1;
+        updateSlider(currentIndex);
+    });
+
+    document.querySelector('.arrow_right').addEventListener('click', () => {
+        currentIndex = (currentIndex === texts.length - 1) ? 0 : currentIndex + 1;
+        updateSlider(currentIndex);
+    });
+
+    dots.forEach(dot => {
+        dot.addEventListener('click', () => {
+            currentIndex = parseInt(dot.getAttribute('data-index'));
+            updateSlider(currentIndex);
+        });
+    });
+</script>
+
+<script>
+    window.addEventListener('scroll', function () {
+        const comixScroll = document.querySelector('.moving_comix_scroll');
+        const comixContent = document.querySelector('.moving_comix_content');
+
+        const scrollTop = window.scrollY;
+        const windowHeight = window.innerHeight;
+        const comixScrollTop = comixScroll.getBoundingClientRect().top + scrollTop;
+        const comixHeight = comixScroll.offsetHeight;
+
+        if (scrollTop + windowHeight > comixScrollTop && scrollTop < comixScrollTop + comixHeight) {
+            const scrollPercentage = (scrollTop + windowHeight - comixScrollTop) / (windowHeight + comixHeight);
+
+            const maxTranslate = comixContent.scrollWidth - comixScroll.offsetWidth;
+            const translateX = Math.min(maxTranslate, maxTranslate * scrollPercentage);
+
+            comixContent.style.transform = `translateX(-${translateX}px)`;
+        }
+    });
+</script>
+
+<script>
+    const fullText = document.getElementById('CopyText').innerText;
+
+    // Function to show only the first 11 and last 11 characters
+    function truncateText(text) {
+        if (text.length <= 22) {
+            return text;
+        }
+        return text.slice(0, 11) + '...' + text.slice(-11);
+    }
+
+    // Set truncated text on page load
+    document.getElementById('CopyText').innerText = truncateText(fullText);
+
+    document.getElementById('CopyButton').addEventListener('click', function () {
+        navigator.clipboard.writeText(fullText).then(function () {
+            const copyButton = document.getElementById('CopyButton');
+            
+            // Optionally, you can keep the truncated version after copying
+            document.getElementById('CopyText').innerText = truncateText(fullText);
+
+            copyButton.classList.add('active');
+
+            setTimeout(function () {
+                copyButton.classList.remove('active');
+            }, 2000);
+        }).catch(function (error) {
+            console.error('Error when copying text', error);
+        });
+    });
+</script>
+
+
+<script>
+    let customCurrentIndex = 0;
+    const customSlides = document.querySelectorAll('.custom_slide');
+    const customDots = document.querySelectorAll('.custom_dot');
+
+    function showCustomSlide(index) {
+        customSlides.forEach((slide, i) => {
+            slide.classList.remove('active');
+            if (customDots[i]) {
+                customDots[i].classList.remove('active');
+            }
+        });
+        customSlides[index].classList.add('active');
+        if (customDots[index]) {
+            customDots[index].classList.add('active');
+        }
+    }
+
+    function nextCustomSlide() {
+        customCurrentIndex = (customCurrentIndex + 1) % customSlides.length;
+        showCustomSlide(customCurrentIndex);
+    }
+
+    let customSlideInterval = setInterval(nextCustomSlide, 4000);
+
+    customDots.forEach(dot => {
+        dot.addEventListener('click', function () {
+            clearInterval(customSlideInterval);
+
+            const index = parseInt(this.getAttribute('data-index'));
+            customCurrentIndex = index;
+            showCustomSlide(customCurrentIndex);
+
+            customSlideInterval = setInterval(nextCustomSlide, 5000);
+        });
+    });
+
+    showCustomSlide(customCurrentIndex);
+</script>
+
+<script>
+    document.querySelectorAll('.faq_btn').forEach(button => {
+        button.addEventListener('click', () => {
+            const questionItem = button.closest('.question_item');
+
+            const isActive = questionItem.classList.contains('active');
+
+            document.querySelectorAll('.question_item').forEach(item => {
+                item.classList.remove('active');
+            });
+
+            if (!isActive) {
+                questionItem.classList.add('active');
+            }
+        });
+    });
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observerCallback = (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('effect_active');
+                }
+            });
+        };
+
+        const observer = new IntersectionObserver(observerCallback, observerOptions);
+        const scrollEffectElements = document.querySelectorAll('.scroll_effect');
+        scrollEffectElements.forEach(element => observer.observe(element));
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuButton = document.querySelector('.menu_mobile_btn');
+        const mobileNav = document.querySelector('.mobile_navigation');
+        const body = document.body;
+
+        function toggleActive() {
+            menuButton.classList.toggle('active');
+            mobileNav.classList.toggle('active');
+            body.classList.toggle('lock_scroll');
+        }
+
+        menuButton.addEventListener('click', toggleActive);
+
+        mobileNav.querySelectorAll('a').forEach(function (link) {
+            link.addEventListener('click', function () {
+                menuButton.classList.remove('active');
+                mobileNav.classList.remove('active');
+                body.classList.remove('lock_scroll');
+            });
+        });
+    });
+</script>
+
+<script>
+    window.addEventListener('scroll', function() {
+    const header = document.querySelector('header');
+
+    if (window.scrollY > 150) {
+        header.classList.add('active');
+    } else {
+        header.classList.remove('active');
+    }
+});
+
+</script>
+<script src="/js/tokenomic3.js"></script>
+<script src="/js/preloader3.js"></script>
+<script src="/js/swiper-bundle.min.js"></script>
+<script src="/js/swiper1.js"></script>
+<script>
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            e.preventDefault();
+            const isMobile = window.innerWidth <= 768;
+            const headerOffset = isMobile ? -300 : 80;
+            const elementPosition = targetElement.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+</script>
+</body></html>
