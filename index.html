@@ -13,6 +13,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/source/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/source/img/favicon-16x16.png">
     <link rel="manifest" href="/source/img/site.webmanifest">
+    <link rel="stylesheet" href="css/terminal.css">
+    <script type="module" crossorigin src="/js/terminal-DSJ1ejGU.js"></script>
 </head>
 
 <body>
@@ -66,7 +68,7 @@
                 <a href="#Social" style="text-transform: uppercase; font-style:Protest Strike;">SOCIAL</a>
             </div>
             <div class="wrapper">
-                <a class="bone link_st_a primary_btn_a_img" target="_blank" href="https://hop.ag/swap/RONDA-SUI">
+                <a class="bone link_st_a primary_btn_a_img" onclick="openTerminal()">
                   <span>BUY $RONDA</span>
                 </a>
               </div>
@@ -86,7 +88,7 @@
                     <h1>RONDA</h1>
                     <div class="row_btn">
                         <div class="wrapper">
-                            <a class="bone primary_btn_a_img-item" target="_blank" href="https://hop.ag/swap/SUI-RONDA">
+                            <a class="bone primary_btn_a_img-item" onclick="openTerminal()">
                               <span>BUY $RONDA</span>
                             </a>
                           </div>
@@ -320,9 +322,14 @@
             </div>
         </footer>
 
+        <div class="terminal-modal" onclick="closeTerminal()">
+            <button class="terminal-close-button" onclick="closeTerminal()">X</button>
+            <div id="app" class="terminal"></div>
+        </div>
     </div>
 
 
+    <script defer src="/js/terminal.js"></script>
 
 <script>
     const sliderText = document.getElementById('SliderText');
@@ -514,7 +521,6 @@
         });
     });
 </script>
-
 <script>
     window.addEventListener('scroll', function() {
     const header = document.querySelector('header');
@@ -525,7 +531,6 @@
         header.classList.remove('active');
     }
 });
-
 </script>
 <script src="/js/tokenomic3.js"></script>
 <script src="/js/preloader3.js"></script>

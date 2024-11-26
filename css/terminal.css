@@ -1,0 +1,23 @@
+.terminal-close-button {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 22rem;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.terminal-modal {
+  inset: 0;
+  gap: 1rem;
+  z-index: 999;
+  display: none;
+  position: fixed;
+  background: #0008;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+button > span > .css-1u8qly9 {
+  margin-top: -1rem;
+}
